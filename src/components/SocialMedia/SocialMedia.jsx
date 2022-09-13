@@ -1,6 +1,10 @@
+import Github from '../Icons/Github'
+
 const SocialMedia = () => {
   return (
-    <div>SocialMedia</div>
+    <div>
+      <Github fill='#fff' />
+    </div>
   )
 }
 

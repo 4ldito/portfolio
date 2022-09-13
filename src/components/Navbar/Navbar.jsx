@@ -1,10 +1,12 @@
+import logo from '../../assets/logo.svg'
+
 import style from './Navbar.module.css'
 
 const Navbar = () => {
   return (
     <nav className={style.navbar}>
       <ul className={style.listNavbar}>
-        <img className={style.brandLogo} alt='Brand Logo' />
+        <img src={logo} className={style.brandLogo} alt='Brand Logo' />
         <li><a id='home' href='#'>Home</a></li>
         <li><a id='portfolio' href='#'>Portfolio</a></li>
         <li><a id='about' href='#'>About me</a></li>
