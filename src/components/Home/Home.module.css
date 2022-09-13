@@ -1,0 +1,48 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+}
+
+.title {
+  font-size: 4em;
+}
+
+.img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 5000px;
+}
+
+.btnArrow {
+  display: inline-block;
+  position: absolute;
+  bottom: 50px;
+}
+
+.animationJump {
+  animation: jump 0.8s infinite;
+  transform: translatey(0);
+}
+
+@keyframes jump {
+  from {
+    transform: translatey(0);
+  }
+
+  to {
+    transform: translatey(30px);
+
+  }
+}
+
+.typedText {
+  font-size: 2rem;
+}
