@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
   color: white;
@@ -13,7 +12,8 @@ a {
 }
 
 p,
-h1 {
+h1,
+body {
   margin: 0;
 }
 
@@ -21,4 +21,12 @@ button {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
 }
