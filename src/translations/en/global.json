@@ -1,0 +1,19 @@
+{
+    "navbar": {
+        "navigation": {
+            "home": "Home",
+            "about": "About me",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
+        },
+        "flags": {
+            "flagEnglish": "English",
+            "flagSpanish": "Spanish"
+        }
+    },
+    "about": {
+        "title": "About me",
+        "firstParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam corporis, dignissimos aspernatur aperiam fugiat, minus consequatur assumenda natus cum iusto voluptas vitae magnam expedita doloremque perferendis dolore nihil consectetur reiciendis?",
+        "secondParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam corporis, dignissimos aspernatur aperiam fugiat, minus consequatur assumenda natus cum iusto voluptas vitae magnam expedita doloremque perferendis dolore nihil consectetur reiciendis?"
+    }
+}

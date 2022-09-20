@@ -2,3 +2,56 @@
     display: flex;
     justify-content: center;
 }
+
+.container {
+    background-color: #12131d;
+    max-width: 1200px;
+    padding: 0rem 2rem;
+    display: flex;
+    gap: 4rem;
+}
+
+
+.imgPhotoProfile {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5000px;
+    margin-top: 2rem;
+}
+
+
+.title {
+    font-size: 2.5rem;
+}
+
+.aboutText {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1030px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .imgPhotoProfile {
+        width: 280px;
+        height: 280px;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .imgPhotoProfile {
+        width: 220px;
+        height: 220px;
+    }
+}

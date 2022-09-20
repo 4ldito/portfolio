@@ -21,7 +21,7 @@ const SocialMedia = () => {
         </li>
 
         <li>
-          <a href='https://api.whatsapp.com/send?phone=+5492473453215&text=Hola%20Aldo!%20Me%20gustar%C3%ADa%20contactar%20con%20vos%20para..' target='_blank' rel='noreferrer'>
+          <a href={'https://api.whatsapp.com/send?phone=+5492473453215&text=Hey%20Aldo!%20Let\'s%20talk%20about..'} target='_blank' rel='noreferrer'>
             <WhatsApp className={`${style.btnSocialMedia} ${style.whatsApp}`} size='2.5em' title='WhatsApp' />
           </a>
         </li>

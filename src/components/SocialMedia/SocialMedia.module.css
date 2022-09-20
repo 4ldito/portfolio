@@ -27,3 +27,11 @@
 .mail:hover {
     fill: #E94234;
 }
+
+@media screen and (max-width: 720px) {
+    .listContainer {
+        gap: 1rem;
+        padding: 1rem 2rem;
+    }
+
+}

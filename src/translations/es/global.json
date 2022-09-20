@@ -1,0 +1,19 @@
+{
+    "navbar": {
+        "navigation": {
+            "home": "Inicio",
+            "about": "Sobre mi",
+            "portfolio": "Portafolio",
+            "contact": "Contacto"
+        },
+        "flags": {
+            "flagEnglish": "Inglés",
+            "flagSpanish": "Español"
+        }
+    },
+    "about": {
+        "title": "Sobre mi",
+        "firstParagraph": "Soy un egresado reciente del bootcamp SoyHenry en el cuál obtuve cientos de horas en conocimiento tanto con practicas ",
+        "secondParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam corporis, dignissimos aspernatur aperiam fugiat, minus consequatur assumenda natus cum iusto voluptas vitae magnam expedita doloremque perferendis dolore nihil consectetur reiciendis?"
+    }
+}

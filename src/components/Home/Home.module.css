@@ -32,7 +32,7 @@
 }
 
 .animationJump {
-  animation: jump 0.8s infinite;
+  animation: jump 1.2s infinite;
   transform: translatey(0);
 }
 
@@ -49,4 +49,10 @@
 
 .typedText {
   font-size: 2rem;
+}
+
+@media screen and (max-width: 320px) {
+  .titleContainer {
+      min-height: 240px;
+  }
 }
