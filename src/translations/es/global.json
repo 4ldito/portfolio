@@ -1,0 +1,22 @@
+{
+    "navbar": {
+        "navigation": {
+            "home": "Inicio",
+            "about": "Sobre mi",
+            "portfolio": "Portafolio",
+            "contact": "Contacto"
+        },
+        "flags": {
+            "flagEnglish": "Inglés",
+            "flagSpanish": "Español"
+        }
+    },
+    "about": {
+        "title": "Sobre mi",
+                    "firstParagraph": "¡Hola! Me llamo Aldo y actualmente me encuentro en Argentina. Soy un apasionado por el mundo de la programación, siempre estoy viendo algún tipo de contenido relacionado con este mundo.",
+        "secondParagraph": "Me considero una persona creativa y muy comprometida. Intento hacer las cosas lo mejor posible buscando superar mis propios limites estando en un constante aprendizaje.",
+        "downloadResume": "Descargar CV",
+        "modalBtnES": "Curriculum Español",
+        "modalBtnEN": "Curriculum Inglés"
+    }
+}

@@ -3,11 +3,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 1rem;
-  max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  height: 90%;
+  height: 100%;
+}
+
+.titleContainer {
+  background-color: rgb(0 0 0 / 11%);
+  width: 100%;
+  padding: 1rem 0;
 }
 
 .title {
@@ -28,7 +32,7 @@
 }
 
 .animationJump {
-  animation: jump 0.8s infinite;
+  animation: jump 1.2s infinite;
   transform: translatey(0);
 }
 
@@ -45,4 +49,59 @@
 
 .typedText {
   font-size: 2rem;
+}
+
+.scrollDowns {
+  position: absolute;
+  bottom: 2rem;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 34px;
+  height: 55px;
+}
+
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+}
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+}
+
+.animationScroll {
+  animation-name: scroll;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .titleContainer {
+    min-height: 240px;
+  }
 }

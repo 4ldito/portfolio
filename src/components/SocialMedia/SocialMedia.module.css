@@ -1,0 +1,37 @@
+.listContainer {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 4rem;
+    border-radius: 10px;
+    align-items: center;
+    gap: 2rem;
+    background-color: #00000096;
+}
+
+.btnSocialMedia {
+    transition: fill .3s;
+}
+
+.github:hover {
+    fill: #8c8c8c;
+}
+
+.linkedin:hover {
+    fill: #0A66C2;
+}
+
+.whatsApp:hover {
+    fill: #0DBF42;
+}
+
+.mail:hover {
+    fill: #E94234;
+}
+
+@media screen and (max-width: 720px) {
+    .listContainer {
+        gap: 1rem;
+        padding: 1rem 2rem;
+    }
+
+}

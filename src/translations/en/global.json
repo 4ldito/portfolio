@@ -1,0 +1,22 @@
+{
+    "navbar": {
+        "navigation": {
+            "home": "Home",
+            "about": "About me",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
+        },
+        "flags": {
+            "flagEnglish": "English",
+            "flagSpanish": "Spanish"
+        }
+    },
+    "about": {
+        "title": "About me",
+        "firstParagraph": "Hey! My name is Aldo and I am currently based in Argentina. I'm passionate about the world of programming, I'm always looking for information and content from this world.",
+        "secondParagraph": "I consider myself a creative and very dedicated person. I try to do my best to overcome my own limits while I'm constantly learning.",
+        "downloadResume": "Download Resume",
+        "modalBtnES": "Spanish Resume",
+        "modalBtnEN": "English Resume"
+    }
+}
