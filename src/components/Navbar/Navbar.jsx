@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <nav className={style.navbar}>
-      <a href='#'><Logo className={style.brandLogo} /></a>
+      <button href='#'><Logo className={style.brandLogo} /></button>
       <button title='Menu' onClick={handleBtnOpenMenu} href='#' className={style.bars}>
         <Bars color='#fff' size='1.5em' />
       </button>

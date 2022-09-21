@@ -68,7 +68,6 @@
   border: 2px solid #fff;
   border-radius: 25px;
   opacity: 0.75;
-  box-sizing: content-box;
 }
 
 .scroller {
@@ -78,7 +77,7 @@
   background-color: #fff;
 }
 
-.animation {
+.animationScroll {
   animation-name: scroll;
   animation-duration: 2s;
   animation-timing-function: cubic-bezier(.15, .41, .69, .94);

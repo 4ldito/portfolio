@@ -22,7 +22,8 @@ const Home = () => {
   }, [])
 
   const handleScroll = () => {
-    mouseDiv.current.classList.remove(style.animation)
+    mouseDiv.current.classList.remove(style.animationScroll)
+    if (window.scrollY <= 10) mouseDiv.current.classList.add(style.animationScroll)
     // Change navbar active
     const sections = document.querySelectorAll('section')
     let current = ''
@@ -44,14 +45,14 @@ const Home = () => {
         <h1 className={style.title}>Aldo Aliscioni</h1><span className={`${style.typedText}`}>{text}<Cursor /></span>
       </div>
       <SocialMedia />
-      {/* <button title='Arrow' className={`${style.btnArrow} ${style.animationJump}`}>
+      {/* <button title='Arrow' className={`${style.btnArrow} ${style.animationScrollJump}`}>
         <svg width='35' height='35' fill='#fff' viewBox='0 0 16 16'>
           <path d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' />
         </svg>
       </button> */}
       <div className={style.scrollDowns}>
         <div className={style.mousey}>
-          <div ref={mouseDiv} className={`${style.scroller} ${style.animation}`} />
+          <div ref={mouseDiv} className={`${style.scroller} ${style.animationScroll}`} />
         </div>
       </div>
     </section>

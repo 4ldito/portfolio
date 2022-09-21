@@ -9,8 +9,8 @@ const Modal = ({ handleViewModal }) => {
   return (
     <div onClick={handleViewModal} className={style.background}>
       <div onClick={(e) => e.stopPropagation()} className={style.container}>
-        <a className={`${style.btn} ${style.animationLeft}`} href=''>{text('about.modalBtnES')}</a>
-        <a className={`${style.btn} ${style.animationRight}`} href=''>{text('about.modalBtnEN')}</a>
+        <a className={`${style.btn} ${style.animationLeft}`} target='_blank' href='resumeSpanish.pdf'>{text('about.modalBtnES')}</a>
+        <a className={`${style.btn} ${style.animationRight}`} target='_blank' href='resumeEnglish.pdf'>{text('about.modalBtnEN')}</a>
         <button onClick={handleViewModal} className={style.close}><Close color='#C42B1C' size='4.5em' /></button>
       </div>
     </div>
