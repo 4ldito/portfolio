@@ -13,7 +13,10 @@
     },
     "about": {
         "title": "Sobre mi",
-        "firstParagraph": "Soy un egresado reciente del bootcamp SoyHenry en el cuál obtuve cientos de horas en conocimiento tanto con practicas ",
-        "secondParagraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam corporis, dignissimos aspernatur aperiam fugiat, minus consequatur assumenda natus cum iusto voluptas vitae magnam expedita doloremque perferendis dolore nihil consectetur reiciendis?"
+                    "firstParagraph": "¡Hola! Me llamo Aldo y actualmente me encuentro en Argentina. Soy un apasionado por el mundo de la programación, siempre estoy viendo algún tipo de contenido relacionado con este mundo.",
+        "secondParagraph": "Me considero una persona creativa y muy comprometida. Intento hacer las cosas lo mejor posible buscando superar mis propios limites estando en un constante aprendizaje.",
+        "downloadResume": "Descargar CV",
+        "modalBtnES": "Curriculum Español",
+        "modalBtnEN": "Curriculum Inglés"
     }
 }

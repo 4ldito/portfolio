@@ -8,9 +8,11 @@ import globalEn from './translations/en/global.json'
 
 import './index.css'
 
+const language = window.localStorage.getItem('language')
+
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: 'en',
+  lng: language || 'en',
   resources: {
     es: { global: globalEs },
     en: { global: globalEn }
