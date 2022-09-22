@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { AiOutlineCloseCircle as Close } from 'react-icons/ai'
 
@@ -5,6 +6,14 @@ import style from './Modal.module.css'
 
 const Modal = ({ handleViewModal }) => {
   const [text] = useTranslation('global')
+
+  useEffect(() => {
+    document.querySelector('body').classList.add('noScroll')
+
+    return () => {
+      document.querySelector('body').classList.remove('noScroll')
+    }
+  }, [])
 
   return (
     <div onClick={handleViewModal} className={style.background}>

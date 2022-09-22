@@ -6,14 +6,14 @@
 }
 
 .container {
-    background-color: #12131d;
-    max-width: 1200px;
+    background-color: #12131de0;
     padding: 0rem 2rem 2rem;
     display: flex;
+    justify-content: space-evenly;
     gap: 4rem;
     border-radius: 10px;
+    width: 100%;
 }
-
 
 .imgPhotoProfile {
     width: 450px;
@@ -30,6 +30,7 @@
 .aboutText {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    max-width: 500px;
 }
 
 .btn {

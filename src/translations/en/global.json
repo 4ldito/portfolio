@@ -18,5 +18,8 @@
         "downloadResume": "Download Resume",
         "modalBtnES": "Spanish Resume",
         "modalBtnEN": "English Resume"
+    },
+    "portfolio": {
+        "title": "My Projects"
     }
 }

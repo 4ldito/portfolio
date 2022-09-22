@@ -18,5 +18,8 @@
         "downloadResume": "Descargar CV",
         "modalBtnES": "Curriculum Español",
         "modalBtnEN": "Curriculum Inglés"
+    },
+    "portfolio": {
+        "title": "Mis Proyectos"
     }
 }
