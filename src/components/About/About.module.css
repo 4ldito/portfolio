@@ -50,6 +50,33 @@
     /* box-shadow: inset 0 -3.25em 0 0 #2929ff; */
 }
 
+.titleModal {
+    font-size: 1.5rem;
+}
+
+.animationLeft:hover {
+    box-shadow: inset 0 80px #2929ff;
+}
+
+.animationRight:hover {
+    box-shadow: inset 0 -80px #2929ff;
+}
+
+.close {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close svg {
+    transition: fill .5s;
+}
+
+.close svg:hover {
+    fill: #ff1700;
+}
+
 @media screen and (max-width: 1030px) {
     .container {
         flex-direction: column;

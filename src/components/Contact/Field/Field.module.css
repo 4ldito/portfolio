@@ -2,10 +2,16 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    min-width: 450px;
+    min-height: 110px;
     font-size: 1.2rem;
-    background-color: black;
+    background-color: #0015ff14;
+    border-radius: 10px;
     padding: 1rem;
+    border: 2px solid #fafafa;
+}
+
+.error {
+    border: 2px solid #d93025;
 }
 
 .container input, .container textarea {
@@ -15,11 +21,22 @@
     resize: vertical;
     outline: none;
     box-shadow: none;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
+    font-family: 'Roboto';
 }
+
+/* .container input:focus, .container textarea:focus {
+    border: 3px solid #d93025;
+} */
 
 .lbl {
     margin-bottom: 0.5rem;
     font-weight: bold;
     font-size: 1.4rem;
+}
+
+.lblError {
+    color: #d93025;
+    margin-top: 0.4rem;
+    font-weight: 300;
 }

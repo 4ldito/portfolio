@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
-import Modal from './Modal/Modal'
+import { AiOutlineCloseCircle as Close } from 'react-icons/ai'
+import Modal from '../Modal/Modal'
 
 import photoProfile from '../../assets/photo.jpeg'
 
@@ -28,7 +29,14 @@ const About = () => {
           <button onClick={handleViewModal} className={style.btn}>{text('about.downloadResume')}</button>
         </div>
       </div>
-      {viewModal && <Modal handleViewModal={handleViewModal} />}
+      {viewModal && (
+        <Modal handleViewModal={handleViewModal}>
+          <h3 className={style.titleModal}>{text('about.downloadResume')}</h3>
+          <a className={`${style.btn} ${style.animationLeft}`} target='_blank' href='resumeSpanish.pdf'>{text('about.modalBtnES')}</a>
+          <a className={`${style.btn} ${style.animationRight}`} target='_blank' href='resumeEnglish.pdf'>{text('about.modalBtnEN')}</a>
+          <button onClick={handleViewModal} className={style.close}><Close color='#d93025' size='3em' /></button>
+        </Modal>
+      )}
     </section>
   )
 }

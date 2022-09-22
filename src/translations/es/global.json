@@ -21,5 +21,22 @@
     },
     "portfolio": {
         "title": "Mis Proyectos"
+    },
+    "contact": {
+        "title": "Contacto",
+        "name": "Nombre",
+        "message": "Mensaje",
+        "messagePlaceholder": "¡Hola! Quiero contactarme con vos porque..",
+        "submit": "Enviar",
+        "errors": {
+            "field_empty": "Por favor, completa este campo correctamente"
+        },
+        "modal": {
+            "success_title": "Éxito!",
+            "success_text": "Tu mensaje fue enviado con éxito.",
+            "error_title": "Error!",
+            "error_text": "Por favor intenta de nuevo o contactame vía aldoaliscioni18@gmail.com",
+            "btnText": "Aceptar"
+        }
     }
 }
