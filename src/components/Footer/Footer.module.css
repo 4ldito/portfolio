@@ -1,9 +1,38 @@
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #222433b5;
     padding: 1rem;
+    position: relative;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    height: 50px;
+}
+
+.socialMediaContainer {
+    position: absolute;
+    top: 8px;
+    left: 30px;
+}
+
+.list {
+    display: flex;
+    gap: 2rem;
+}
+
+.logoContainer {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+
+.btnSocialMedia:hover {
+    fill: black;
+}
+
+@media screen and (max-width: 768px) {
+    .textContainer {
+        display: none;
+    }
 }
