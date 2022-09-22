@@ -18,5 +18,25 @@
         "downloadResume": "Download Resume",
         "modalBtnES": "Spanish Resume",
         "modalBtnEN": "English Resume"
+    },
+    "portfolio": {
+        "title": "My Projects"
+    },
+    "contact": {
+        "title": "Contact",
+        "name": "Name",
+        "message": "Message",
+        "messagePlaceholder": "Hey! I want to get in touch with you because..",
+        "submit": "Submit",
+        "errors": {
+            "field_empty": "Please complete this field correctly"
+        },
+        "modal": {
+            "success_title": "Success!",
+            "success_text": "Your message was successfully sent.",
+            "error_title": "Error!",
+            "error_text": "Please try again or contact me via aldoaliscioni18@gmail.com",
+            "btnText": "OK"
+        }
     }
 }

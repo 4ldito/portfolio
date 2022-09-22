@@ -1,8 +1,9 @@
 .container {
-    background-color: #222433b5;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    padding: 2rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: #222433b5;
+    padding: 1rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }

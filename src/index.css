@@ -36,3 +36,7 @@ li {
 ul {
   padding: 0;
 }
+
+.noScroll {
+  overflow-y: hidden;
+}

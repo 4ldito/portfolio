@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Starcards",
+    "img": "img/starcards.png",
+    "techs": [
+      "React",
+      "Redux",
+      "HTML5",
+      "CSS3",
+      "NodeJS",
+      "Sequelize",
+      "PostgreSQL",
+      "Express",
+      "Socket.IO",
+      "Passport",
+      "Firebase",
+      "+ More"
+    ],
+    "deploy": "https://starcards.vercel.app/",
+    "github": "https://github.com/4ldito/Henry-PG-StarCards",
+    "es": {
+      "info": "Proyecto desarrollado en grupo de 7 personas.\nEs un juego web de cartas basado en el mundo Starcraft, consta de su propio sistema de monetización y e-commerce incorporado.\nPuedes chatear con tus amigos en un chat tanto público como privado, coleccionar cartas o vender las que no te gusten, crear tus propios mazos ¡y mucho más!"
+    },
+    "en": {
+      "info": "Project developed in a group of 7 people.\nIt is a web card game based on the Starcraft world, it has its own monetization system and incorporated e-commerce.\nYou can chat with your friends in both public and private chat, collect cards or sell the ones you don't like, create your own decks and much more!"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Worldev",
+    "img": "img/worldev.png",
+    "techs": [
+      "React",
+      "Redux",
+      "HTML5",
+      "CSS3",
+      "NodeJS",
+      "Sequelize",
+      "PostgreSQL",
+      "Express"
+    ],
+    "deploy": "https://worldev.vercel.app/",
+    "github": "https://github.com/4ldito/PI-Countries",
+    "es": {
+      "info": "Aquí podrás encontrar información sobre ¡todos los países del mundo! Además de añadir actividades turisticas que quieras realizar hacer en cada uno de ellos o visualizar las agregadas por otros usuarios.\nTambién posee un juego acerda de responder cuál es la capital de cada país, ¿serás capaz de conseguir 5 puntos sin fallar?"
+    },
+    "en": {
+      "info": "Here you can find information about all the countries in the world! You can also add tourist activities that you want to do in each one of them or visualize the ones added by other users.\nIt also has a game where you have to answer which is the capital of each country, will you be able to get 5 points without failing?"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Breaking Bad Info",
+    "img": "img/breaking-badd-app.png",
+    "techs": ["React", "Redux", "HTML5", "CSS3"],
+    "deploy": "https://4ldito.github.io/breaking-bad-reactapp/",
+    "github": "https://github.com/4ldito/breaking-bad-reactapp",
+    "es": {
+      "info": "Contiene información acerca de dos series del mismo universo: Breaking Bad y Better Call Saul, vas a encontrar frases celebres de las series, contenido acerca de todos los personajes y sus temporadas.\nAdemás, posee un botón que te mostrará información acerca de una muerte aleatoria que haya ocurrido en alguna de las dos serie.\n¡No me hago responsable de spoilers!"
+    },
+    "en": {
+      "info": "It contains information about two series of the same universe: Breaking Bad and Better Call Saul, you will find famous quotes of both series, content about all the characters and their seasons.\nIn addition, it has a button that will show you information about a random death that has occurred in one of the two series.\nI'm not responsible for spoilers!"
+    }
+  }
+]
