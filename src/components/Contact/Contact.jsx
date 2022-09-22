@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import axios from 'axios'
-// import imgError from '../../assets/error_icon.png'
+import imgError from '../../assets/error_icon.png'
 import imgOk from '../../assets/ok_icon.png'
 
 import Modal from '../Modal/Modal'
@@ -19,13 +19,16 @@ const initialNewEmail = {
   message: { text: '', error: false }
 }
 
+let typeModal = 'error'
+
 const Contact = () => {
   const [text] = useTranslation('global')
   const [submiting, setSubmiting] = useState(false)
-  const [newEmail, setNewEmail] = useState(initialNewEmail)
+  const [newEmail, setNewEmail] = useState({ ...initialNewEmail })
   const [viewModal, setViewModal] = useState(false)
 
-  const handleViewModal = () => {
+  const handleViewModal = (type) => {
+    if (type) typeModal = type
     setViewModal(!viewModal)
   }
 
@@ -44,7 +47,6 @@ const Contact = () => {
     e.preventDefault()
     const copyNewEmail = { ...newEmail }
     let error = false
-    handleViewModal()
 
     if (!isValidEmail(copyNewEmail.email.text)) { copyNewEmail.email.error = true; error = true }
     if (newEmail.name.text.length < 3) { copyNewEmail.name.error = true; error = true }
@@ -61,10 +63,10 @@ const Contact = () => {
 
     try {
       await axios.post(formSparkUrl, payload)
-      handleViewModal()
-      setNewEmail(initialNewEmail)
+      handleViewModal('success')
+      setNewEmail({ ...initialNewEmail })
     } catch (error) {
-      console.log(error)
+      handleViewModal('error')
     } finally {
       setSubmiting(false)
     }
@@ -79,11 +81,9 @@ const Contact = () => {
             <Field lblError={text('contact.errors.field_empty')} id='email' lblText='Email' error={newEmail.email.error}>
               <input placeholder='email@test.com' id='email' onChange={handleInputChange} value={newEmail.email.text} type='email' />
             </Field>
-
             <Field lblError={text('contact.errors.field_empty')} id='name' lblText={text('contact.name')} error={newEmail.name.error}>
               <input placeholder={text('contact.name')} id='name' onChange={handleInputChange} value={newEmail.name.text} type='text' />
             </Field>
-
             <Field lblError={text('contact.errors.field_empty')} id='message' lblText={text('contact.message')} error={newEmail.message.error}>
               <textarea placeholder={text('contact.messagePlaceholder')} id='message' onChange={handleInputChange} value={newEmail.message.text} />
             </Field>
@@ -95,9 +95,9 @@ const Contact = () => {
       </section>
       {viewModal && (
         <Modal handleViewModal={handleViewModal}>
-          <img className={style.imgIcon} src={imgOk} alt='Icon' />
-          <h4 className={style.titleModal}>{text('contact.modal.success_title')}</h4>
-          <p className={style.textModal}>{text('contact.modal.success_text')}</p>
+          <img className={style.imgIcon} src={typeModal === 'success' ? imgOk : imgError} alt='Icon' />
+          <h4 className={style.titleModal}>{text(`contact.modal.${typeModal}_title`)}</h4>
+          <p className={style.textModal}>{text(`contact.modal.${typeModal}_text`)}</p>
           <button className={style.btn} onClick={handleViewModal}>{text('contact.modal.btnText')}</button>
         </Modal>
       )}
