@@ -16,3 +16,9 @@
 .title {
     font-size: 2.5rem;
 }
+
+@media screen and (max-width: 900px) {
+    .containerProjects {
+        width: auto;
+    }
+}

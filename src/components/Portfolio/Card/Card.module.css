@@ -92,7 +92,7 @@
     font-size: 1.2rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .container {
         flex-direction: column;
     }
@@ -105,5 +105,11 @@
     .infoContainer {
         height: auto;
         padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        margin: 0;
     }
 }
