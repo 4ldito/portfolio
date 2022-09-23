@@ -45,6 +45,7 @@ const Contact = () => {
 
   const handleOnSubmit = async (e) => {
     e.preventDefault()
+
     const copyNewEmail = { ...newEmail }
     let error = false
 
