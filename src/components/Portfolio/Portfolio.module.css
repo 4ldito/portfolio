@@ -22,3 +22,10 @@
         width: auto;
     }
 }
+
+@media screen and (max-width: 364px) {
+    .containerProjects {
+        margin: 0.2rem;
+    }
+    
+}
