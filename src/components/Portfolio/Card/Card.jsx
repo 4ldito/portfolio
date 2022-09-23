@@ -1,4 +1,4 @@
-import { HiExternalLink as ExternalLink } from 'react-icons/Hi'
+import { GoLinkExternal as ExternalLink } from 'react-icons/Go'
 import { FaGithub as Github } from 'react-icons/fa'
 
 import style from './Card.module.css'
