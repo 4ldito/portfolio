@@ -45,6 +45,7 @@ const Contact = () => {
 
   const handleOnSubmit = async (e) => {
     e.preventDefault()
+
     const copyNewEmail = { ...newEmail }
     let error = false
 
@@ -85,7 +86,7 @@ const Contact = () => {
               <input placeholder={text('contact.name')} id='name' onChange={handleInputChange} value={newEmail.name.text} type='text' />
             </Field>
             <Field lblError={text('contact.errors.field_empty')} id='message' lblText={text('contact.message')} error={newEmail.message.error}>
-              <textarea placeholder={text('contact.messagePlaceholder')} id='message' onChange={handleInputChange} value={newEmail.message.text} />
+              <textarea rows='4' placeholder={text('contact.messagePlaceholder')} id='message' onChange={handleInputChange} value={newEmail.message.text} />
             </Field>
             <div className={style.btnContainer}>
               <button className={`${style.btn} ${submiting && style.btnLoading}`} formNoValidate type='submit'>{submiting ? <div className={style.circle} /> : text('contact.submit')}</button>

@@ -20,10 +20,10 @@ const Navbar = () => {
     listNavbar.current.style.left = '-600px'
   }
 
-  const handleBtnNavbarClick = (e) => {
+  const handleBtnNavbarClick = (e, value) => {
+    e.preventDefault()
     handleBtnCloseMenu()
-    // const scrollTo = document.getElementById(e.target.value).offsetTop - 30
-    const element = document.getElementById(e.target.value)
+    const element = document.getElementById(value || e.target.value)
     const heigth = element.clientHeight / 12
     const scrollTo = element.offsetTop - heigth
     window.scrollTo({ top: scrollTo, behavior: 'smooth' })
@@ -31,10 +31,10 @@ const Navbar = () => {
 
   return (
     <nav className={style.navbar}>
-      <button href='#'>
+      <button onClick={e => handleBtnNavbarClick(e, 'home')}>
         <Logo className={style.brandLogo} />
       </button>
-      <button title='Menu' onClick={handleBtnOpenMenu} href='#' className={style.bars}>
+      <button title='Menu' onClick={handleBtnOpenMenu} className={style.bars}>
         <Bars color='#fff' size='1.5em' />
       </button>
       <ul ref={listNavbar} className={style.listNavbar}>
