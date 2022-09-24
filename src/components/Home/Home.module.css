@@ -25,28 +25,6 @@
   border-radius: 5000px;
 }
 
-.btnArrow {
-  display: inline-block;
-  position: absolute;
-  bottom: 50px;
-}
-
-.animationJump {
-  animation: jump 1.2s infinite;
-  transform: translatey(0);
-}
-
-@keyframes jump {
-  from {
-    transform: translatey(0);
-  }
-
-  to {
-    transform: translatey(30px);
-
-  }
-}
-
 .typedText {
   font-size: 2rem;
 }
