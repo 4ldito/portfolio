@@ -40,3 +40,11 @@
     margin-top: 0.4rem;
     font-weight: 300;
 }
+
+@media screen and (max-width: 364px) {
+    .container {
+        border: none;
+        width: calc(100vw - 3.5rem);
+        padding: 1rem;
+    }
+}

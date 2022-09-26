@@ -47,21 +47,12 @@
 
 .btn:hover {
     box-shadow: inset 12.5em 0 0 0 #2929ff;
-    /* box-shadow: inset 0 -3.25em 0 0 #2929ff; */
 }
 
 .titleModal {
     font-size: 1.7rem;
     text-align: center;
     margin-bottom: 0;
-}
-
-.animationUp:hover {
-    box-shadow: inset 0 80px #2929ff;
-}
-
-.animationDown:hover {
-    box-shadow: inset 0 -80px #2929ff;
 }
 
 .close {
@@ -97,11 +88,27 @@
         padding: 0 1rem 2rem;
         border-radius: 0;
     }
+
+    .btn {
+        width: 100%;
+    }
+
+    .btn:hover {
+        box-shadow: inset 25.5em 0 0 0 #2929ff;
+    }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 364px) {
     .imgPhotoProfile {
         width: 220px;
         height: 220px;
     }
+}
+
+.animationUp:hover {
+    box-shadow: inset 0 80px #2929ff;
+}
+
+.animationDown:hover {
+    box-shadow: inset 0 -80px #2929ff;
 }
