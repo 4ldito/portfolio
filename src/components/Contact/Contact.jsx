@@ -80,16 +80,16 @@ const Contact = () => {
           <h3 className={style.title}>{text('contact.title')}</h3>
           <form className={style.form} onSubmit={handleOnSubmit}>
             <Field lblError={text('contact.errors.field_empty')} id='email' lblText='Email' error={newEmail.email.error}>
-              <input placeholder='email@test.com' id='email' onChange={handleInputChange} value={newEmail.email.text} type='email' />
+              <input autoComplete='email' placeholder='email@test.com' id='email' onChange={handleInputChange} value={newEmail.email.text} type='email' />
             </Field>
             <Field lblError={text('contact.errors.field_empty')} id='name' lblText={text('contact.name')} error={newEmail.name.error}>
-              <input placeholder={text('contact.name')} id='name' onChange={handleInputChange} value={newEmail.name.text} type='text' />
+              <input autoComplete='name' placeholder={text('contact.name')} id='name' onChange={handleInputChange} value={newEmail.name.text} type='text' />
             </Field>
             <Field lblError={text('contact.errors.field_empty')} id='message' lblText={text('contact.message')} error={newEmail.message.error}>
               <textarea rows='4' placeholder={text('contact.messagePlaceholder')} id='message' onChange={handleInputChange} value={newEmail.message.text} />
             </Field>
             <div className={style.btnContainer}>
-              <button className={`${style.btn} ${submiting && style.btnLoading}`} formNoValidate type='submit'>{submiting ? <div className={style.circle} /> : text('contact.submit')}</button>
+              <button title={text('contact.submit')} className={`${style.btn} ${submiting && style.btnLoading}`} formNoValidate type='submit'>{submiting ? <div className={style.circle} /> : text('contact.submit')}</button>
             </div>
           </form>
         </div>
@@ -99,7 +99,7 @@ const Contact = () => {
           <img className={style.imgIcon} src={typeModal === 'success' ? imgOk : imgError} alt='Icon' />
           <h4 className={style.titleModal}>{text(`contact.modal.${typeModal}_title`)}</h4>
           <p className={style.textModal}>{text(`contact.modal.${typeModal}_text`)}</p>
-          <button className={style.btn} onClick={handleViewModal}>{text('contact.modal.btnText')}</button>
+          <button title={text('contact.modal.btnText')} className={style.btn} onClick={handleViewModal}>{text('contact.modal.btnText')}</button>
         </Modal>
       )}
     </>

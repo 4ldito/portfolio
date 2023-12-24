@@ -30,10 +30,10 @@ const Footer = () => {
         </ul>
       </div>
       <div className={style.textContainer}>
-        <p>Made with love <Heart /></p>
+        <p className={style.loveText}>Made with love <Heart /></p>
       </div>
       <div className={style.logoContainer}>
-        <button href='#'><Logo className={style.brandLogo} /></button>
+        <button title='Back to Home' href='#'><Logo className={style.brandLogo} /></button>
       </div>
     </div>
   )

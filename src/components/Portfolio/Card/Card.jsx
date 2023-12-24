@@ -9,8 +9,8 @@ const Card = ({ title, img, info, techs, deploy, github, direction }) => {
       <div className={style.containerImg}>
         <img className={style.img} src={img} alt={`${title}`} />
         <div className={style.hoverInfo}>
-          <a className={`${style.deploy}`} target='_blank' href={deploy} rel='noreferrer'><ExternalLink size='3em' /></a>
-          <a className={`${style.github}`} target='_blank' href={github} rel='noreferrer'><Github size='3em' /></a>
+          <a className={`${style.deploy}`} target='_blank' href={deploy} rel='noreferrer'><ExternalLink size='3em' title={`${title} page`} /></a>
+          <a className={`${style.github}`} target='_blank' href={github} rel='noreferrer'><Github size='3em' title={`${title} github page`} /></a>
           <div className={style.techsContainer}>
             {techs.map(tech => {
               return <p className={style.tech} key={tech}>{tech}</p>
