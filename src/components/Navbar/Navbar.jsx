@@ -31,45 +31,45 @@ const Navbar = () => {
 
   return (
     <nav className={style.navbar}>
-      <button onClick={e => handleBtnNavbarClick(e, 'home')}>
-        <Logo className={style.brandLogo} />
+      <button className={style.brandLogo} title='Home' onClick={e => handleBtnNavbarClick(e, 'home')}>
+        <Logo />
       </button>
       <button title='Menu' onClick={handleBtnOpenMenu} className={style.bars}>
         <Bars color='#fff' size='1.5em' />
       </button>
       <ul ref={listNavbar} className={style.listNavbar}>
         <li>
-          <button onClick={e => handleBtnNavbarClick(e)} className={`home ${style.btnNavbar} ${style.active}`} value='home'>
+          <button title={text('navbar.navigation.home')} onClick={e => handleBtnNavbarClick(e)} className={`home ${style.btnNavbar} ${style.active}`} value='home'>
             {text('navbar.navigation.home')}
           </button>
         </li>
         <li>
-          <button onClick={e => handleBtnNavbarClick(e)} className={`about ${style.btnNavbar}`} value='about'>
+          <button title={text('navbar.navigation.about')} onClick={e => handleBtnNavbarClick(e)} className={`about ${style.btnNavbar}`} value='about'>
             {text('navbar.navigation.about')}
           </button>
         </li>
         <li>
-          <button onClick={e => handleBtnNavbarClick(e)} className={`portfolio ${style.btnNavbar}`} value='portfolio'>
+          <button title={text('navbar.navigation.portfolio')} onClick={e => handleBtnNavbarClick(e)} className={`portfolio ${style.btnNavbar}`} value='portfolio'>
             {text('navbar.navigation.portfolio')}
           </button>
         </li>
         <li>
-          <button onClick={e => handleBtnNavbarClick(e)} className={`contact ${style.btnNavbar}`} value='contact'>
+          <button title={text('navbar.navigation.contact')} onClick={e => handleBtnNavbarClick(e)} className={`contact ${style.btnNavbar}`} value='contact'>
             {text('navbar.navigation.contact')}
           </button>
         </li>
         <li>
-          <button onClick={handleBtnCloseMenu} className={style.close}>
+          <button title='Cerrar' onClick={handleBtnCloseMenu} className={style.close}>
             <Close color='#C42B1C' size='3em' />
           </button>
         </li>
       </ul>
       <div className={style.flagsContainer}>
-        <button onClick={() => { i18n.changeLanguage('en'); window.localStorage.setItem('language', 'en') }}>
-          <img className={style.flagImg} src='https://flagcdn.com/us.svg' alt='English' />
+        <button title='Cambiar a Inglés' onClick={() => { i18n.changeLanguage('en'); window.localStorage.setItem('language', 'en') }}>
+          <img className={style.flagImg} src='img/us.svg' alt='English' />
         </button>
-        <button onClick={() => { i18n.changeLanguage('es'); window.localStorage.setItem('language', 'es') }}>
-          <img className={style.flagImg} src='https://flagcdn.com/es.svg' alt='Spanish' />
+        <button title='Cambiar a Español' onClick={() => { i18n.changeLanguage('es'); window.localStorage.setItem('language', 'es') }}>
+          <img className={style.flagImg} src='img/es.svg' alt='Spanish' />
         </button>
       </div>
     </nav>

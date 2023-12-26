@@ -7,7 +7,7 @@
     position: relative;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    height: 50px;
+    height: 55px;
 }
 
 .socialMediaContainer {
@@ -30,6 +30,10 @@
 .btnSocialMedia:hover {
     color: #cacaca;
 
+}
+
+.loveText {
+  font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {
