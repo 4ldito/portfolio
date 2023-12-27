@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { AiOutlineCloseCircle as Close } from 'react-icons/ai'
 import Modal from '../Modal/Modal'
 
-import photoProfile from '../../assets/photo.jpeg'
+import photoProfile from '../../assets/me.webp'
 
 import style from './About.module.css'
 

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Starcards",
-    "img": "img/starcards.png",
+    "img": "img/starcards.webp",
     "techs": [
       "React",
       "Redux",
@@ -29,7 +29,7 @@
   {
     "id": 2,
     "title": "Worldev",
-    "img": "img/worldev.png",
+    "img": "img/worldev.webp",
     "techs": [
       "React",
       "Redux",
@@ -52,7 +52,7 @@
   {
     "id": 3,
     "title": "Breaking Bad Info",
-    "img": "img/breaking-badd-app.png",
+    "img": "img/breaking-badd-app.webp",
     "techs": ["React", "Redux", "HTML5", "CSS3"],
     "deploy": "https://4ldito.github.io/breaking-bad-reactapp/",
     "github": "https://github.com/4ldito/breaking-bad-reactapp",
