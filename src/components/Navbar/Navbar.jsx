@@ -7,26 +7,20 @@ import { FaBars as Bars } from 'react-icons/fa'
 import { AiOutlineCloseCircle as Close } from 'react-icons/ai'
 
 import style from './Navbar.module.css'
+import { goToSection } from '../../utils/navigation'
 
 const Navbar = () => {
   const [text, i18n] = useTranslation('global')
   const listNavbar = useRef()
 
-  const handleBtnOpenMenu = () => {
-    listNavbar.current.style.left = '0'
-  }
-
-  const handleBtnCloseMenu = () => {
-    listNavbar.current.style.left = '-600px'
+  const handleBtnMenu = (open) => {
+    const pixels = open ? '0' : '-600px'
+    listNavbar.current.style.left = pixels
   }
 
   const handleBtnNavbarClick = (e, value) => {
-    e.preventDefault()
-    handleBtnCloseMenu()
-    const element = document.getElementById(value || e.target.value)
-    const heigth = element.clientHeight / 12
-    const scrollTo = element.offsetTop - heigth
-    window.scrollTo({ top: scrollTo, behavior: 'smooth' })
+    goToSection(e, value)
+    handleBtnMenu()
   }
 
   return (
@@ -34,7 +28,7 @@ const Navbar = () => {
       <button className={style.brandLogo} title='Home' onClick={e => handleBtnNavbarClick(e, 'home')}>
         <Logo />
       </button>
-      <button title='Menu' onClick={handleBtnOpenMenu} className={style.bars}>
+      <button title='Menu' onClick={() => handleBtnMenu(true)} className={style.bars}>
         <Bars color='#fff' size='1.5em' />
       </button>
       <ul ref={listNavbar} className={style.listNavbar}>
@@ -59,7 +53,7 @@ const Navbar = () => {
           </button>
         </li>
         <li>
-          <button title='Cerrar' onClick={handleBtnCloseMenu} className={style.close}>
+          <button title='Cerrar' onClick={() => handleBtnMenu(false)} className={style.close}>
             <Close color='#C42B1C' size='3em' />
           </button>
         </li>

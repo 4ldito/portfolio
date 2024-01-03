@@ -4,6 +4,7 @@ import { FiMail as Mail } from 'react-icons/fi'
 import Logo from '../Icons/Logo'
 
 import style from './Footer.module.css'
+import { goToSection } from '../../utils/navigation'
 
 const Footer = () => {
   return (
@@ -33,7 +34,7 @@ const Footer = () => {
         <p className={style.loveText}>Made with love <Heart /></p>
       </div>
       <div className={style.logoContainer}>
-        <button title='Back to Home' href='#'><Logo className={style.brandLogo} /></button>
+        <button onClick={e => goToSection(e, 'home')} title='Back to Home' href='#'><Logo className={style.brandLogo} /></button>
       </div>
     </div>
   )
