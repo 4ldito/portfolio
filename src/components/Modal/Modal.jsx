@@ -12,13 +12,13 @@ const Modal = ({ handleViewModal, children }) => {
   }, [])
 
   return (
-    <div onClick={handleViewModal} className={style.background}>
+    <section onClick={handleViewModal} className={style.background}>
       <div onClick={(e) => e.stopPropagation()} className={style.container}>
         <div className={style.infoContainer}>
           {children}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

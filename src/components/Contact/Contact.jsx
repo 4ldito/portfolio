@@ -86,7 +86,7 @@ const Contact = () => {
               <input autoComplete='name' placeholder={text('contact.name')} id='name' onChange={handleInputChange} value={newEmail.name.text} type='text' />
             </Field>
             <Field lblError={text('contact.errors.field_empty')} id='message' lblText={text('contact.message')} error={newEmail.message.error}>
-              <textarea rows='4' placeholder={text('contact.messagePlaceholder')} id='message' onChange={handleInputChange} value={newEmail.message.text} />
+              <textarea className={style.textArea} rows='4' placeholder={text('contact.messagePlaceholder')} id='message' onChange={handleInputChange} value={newEmail.message.text} />
             </Field>
             <div className={style.btnContainer}>
               <button title={text('contact.submit')} className={`${style.btn} ${submiting && style.btnLoading}`} formNoValidate type='submit'>{submiting ? <div className={style.circle} /> : text('contact.submit')}</button>

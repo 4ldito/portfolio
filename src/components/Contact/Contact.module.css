@@ -46,6 +46,10 @@
     transition: width .5s, box-shadow .5s;
 }
 
+.textArea {
+  min-height: 80px;
+}
+
 .btnLoading {
     width: 100px;
     box-shadow: inset 0 -80px #2929ff;

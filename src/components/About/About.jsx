@@ -32,8 +32,10 @@ const About = () => {
       {viewModal && (
         <Modal handleViewModal={handleViewModal}>
           <h3 className={style.titleModal}>{text('about.downloadResume')}</h3>
-          <a className={`${style.btn} ${style.animationUp}`} target='_blank' href='resumeSpanish.pdf'>{text('about.modalBtnES')}</a>
-          <a className={`${style.btn} ${style.animationDown}`} target='_blank' href='resumeEnglish.pdf'>{text('about.modalBtnEN')}</a>
+          <div className={style.buttonsContainer}>
+            <a className={`${style.btn} ${style.animationUp}`} target='_blank' href='resumeSpanish.pdf'>{text('about.modalBtnES')}</a>
+            <a className={`${style.btn} ${style.animationDown}`} target='_blank' href='resumeEnglish.pdf'>{text('about.modalBtnEN')}</a>
+          </div>
           <button title='Cerrar' onClick={handleViewModal} className={style.close}><Close color='#d93025' size='3em' /></button>
         </Modal>
       )}
