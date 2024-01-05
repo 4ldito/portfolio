@@ -33,6 +33,12 @@
     max-width: 500px;
 }
 
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .btn {
     display: inline-block;
     background-color: #5e5efa;
@@ -91,10 +97,11 @@
 
     .btn {
         width: 100%;
+        align-self: center;
     }
 
     .btn:hover {
-        box-shadow: inset 25.5em 0 0 0 #2929ff;
+        box-shadow: inset 31.5em 0 0 0 #2929ff;
     }
 }
 
