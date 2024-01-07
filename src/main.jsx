@@ -3,19 +3,20 @@ import ReactDOM from 'react-dom/client'
 import App from './components/App/App'
 import { I18nextProvider } from 'react-i18next'
 import i18next from 'i18next'
-import globalEs from './translations/es/global.json'
-import globalEn from './translations/en/global.json'
+import languages from './translations'
 
 import './index.css'
 
-const language = window.localStorage.getItem('language')
+const language = window.localStorage.getItem('language') || 'en'
+
+document.documentElement.lang = language
 
 i18next.init({
   interpolation: { escapeValue: false },
-  lng: language || 'en',
+  lng: language,
   resources: {
-    es: { global: globalEs },
-    en: { global: globalEn }
+    es: { global: languages.es },
+    en: { global: languages.en }
   }
 })
 
