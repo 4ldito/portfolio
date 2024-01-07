@@ -23,6 +23,12 @@ const Navbar = () => {
     handleBtnMenu()
   }
 
+  const handleLanguageChange = (language) => {
+    window.localStorage.setItem('language', language)
+    i18n.changeLanguage(language)
+    document.documentElement.lang = language
+  }
+
   return (
     <nav className={style.navbar}>
       <button className={style.brandLogo} title='Home' onClick={e => handleBtnNavbarClick(e, 'home')}>
@@ -59,10 +65,10 @@ const Navbar = () => {
         </li>
       </ul>
       <div className={style.flagsContainer}>
-        <button title='Cambiar a Inglés' onClick={() => { i18n.changeLanguage('en'); window.localStorage.setItem('language', 'en') }}>
+        <button title='Cambiar a Inglés' onClick={() => { handleLanguageChange('en') }}>
           <img className={style.flagImg} src='img/us.svg' alt='English' />
         </button>
-        <button title='Cambiar a Español' onClick={() => { i18n.changeLanguage('es'); window.localStorage.setItem('language', 'es') }}>
+        <button title='Cambiar a Español' onClick={() => { handleLanguageChange('es') }}>
           <img className={style.flagImg} src='img/es.svg' alt='Spanish' />
         </button>
       </div>
