@@ -9,7 +9,7 @@
 }
 
 .btnSocialMedia {
-    transition: fill .3s;
+    transition: fill .3s ease, stroke  .3s ease;
 }
 
 .github:hover {
@@ -25,7 +25,7 @@
 }
 
 .mail:hover {
-    fill: #E94234;
+    stroke: #E94234;
 }
 
 @media screen and (max-width: 720px) {
