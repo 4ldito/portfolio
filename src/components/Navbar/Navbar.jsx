@@ -14,7 +14,14 @@ const Navbar = () => {
   const listNavbar = useRef()
 
   const handleBtnMenu = (open) => {
-    const pixels = open ? '0' : '-600px'
+    let pixels = 0
+    const body = document.querySelector('body')
+    if (open) {
+      body.style.overflow = 'hidden'
+    } else {
+      pixels = '-600px'
+      body.style.overflow = 'auto'
+    }
     listNavbar.current.style.left = pixels
   }
 
