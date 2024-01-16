@@ -21,7 +21,7 @@ const Card = ({ title, img, info, techs, deploy, github, direction }) => {
       <div className={style.infoContainer}>
         <h3 className={style.title}>{title}</h3>
         {info.map((text, i) => {
-          return <p key={i} className={style.infoText}>{text}</p>
+          return <p key={i} className={`${style.infoText} ${i === 0 ? style.firstText : ''}`}>{text}</p>
         })}
       </div>
     </article>
